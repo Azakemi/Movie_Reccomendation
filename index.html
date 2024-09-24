@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="search-container">
+        <h1 class="search-heading">Search for a Movie</h1>
+        <div class="search-bar">
+            <input type="text" id="movie-title" placeholder="Enter a movie title">
+            <button id="search-btn">Search</button>
+        </div>
+        <h1 class="results-heading" id="results-heading" style="display: none;">Recommended Movies</h1>
+        <div class="nav-bar" id="nav-bar" style="display: none;">
+            <a href="#" id="back-to-search">🔙 Back to Search</a>
+        </div>
+        <div class="search-results" id="search-results">
+            <!-- Recommended movies will be displayed here -->
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

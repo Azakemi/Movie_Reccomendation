@@ -1,0 +1,75 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: url('aakash-dhage-YTBeFNOp__g-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.search-container {
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.search-heading, .results-heading {
+    color: white;
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+.search-bar {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-bar input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    width: 80%;
+    padding: 10px;
+}
+
+#search-btn {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.search-results {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 16px;
+    display: none;
+}
+
+.recommendation {
+    margin-top: 10px;
+    color: white;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.recommendation h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.recommendation p {
+    font-size: 14px;
+    margin: 4px 0;
+}
